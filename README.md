@@ -20,7 +20,7 @@ After the MN is up and running, you need to configure the desktop wallet accordi
 8. Go to  **C:\Users\username\AppData\Roaming\Fastway**
 9. Add the following entry:
 ```
-127.0.0.1:3344 privatekey transaction index
+Alias Address:Port privatekey transaction index
 ```
 * Alias: **MN1**
 * Address: **VPS_IP:PORT**
@@ -28,16 +28,16 @@ After the MN is up and running, you need to configure the desktop wallet accordi
 * TxHash: **First value from Step 6**
 * Output index:  **Second value from Step 6**
 9. Save and close the file.
-10. Go to **Masternode Tab**. If you tab is not shown, please enable it from: **Settings - Options - Wallet - Show Masternodes Tab**
-11. Click **Update status** to see your node. If it is not shown, close the wallet and start it again. Make sure the wallet is un
-12. Select your MN and click **Start Alias** to start it.
+10. Close the wallet and start it again. Make sure the wallet is un
+11. Go to **Masternode Tab**.
+12. Select your MN and click **Start** to start it.
 13. Alternatively, open **Debug Console** and type:
 ```
-masternode start-alias MN1
+startmasternode alias 0 MN1
 ```
 14. Login to your VPS and check your masternode status by running the following command:.
 ```
-FastWay-cli masternode status
+fastway-cli masternode status
 ```
 ***
 
