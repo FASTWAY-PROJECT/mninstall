@@ -37,7 +37,7 @@ startmasternode alias 0 MN1
 ```
 14. Login to your VPS and check your masternode status by running the following command:.
 ```
-fastway-cli masternode status
+fastway-cli getmasternodestatus
 ```
 ***
 
